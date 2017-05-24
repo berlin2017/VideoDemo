@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/AnHuiNews/work/android/LiveDemo/vitamio/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f158bce9b52ca1f23796765d26584004306a5230">
+        <dex dex="/Users/AnHuiNews/work/android/LiveDemo/app/build/intermediates/pre-dexed/debug/classes_58b704f141c1377cc487acbb4607aaffa7bfd0cf.jar" />
+    </item>
+
+</items>

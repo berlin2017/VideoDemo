@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoview_video1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <include layout="@layout/layout_video_layer" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview_video1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="300dp"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp" />
+
+</FrameLayout>

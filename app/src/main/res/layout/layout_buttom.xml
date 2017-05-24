@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_above="@+id/video_commite_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:id="@+id/video_commite_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_video1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/video_commite_edit1"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</ScrollView>

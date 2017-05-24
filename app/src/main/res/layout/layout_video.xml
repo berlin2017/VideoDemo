@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:id="@+id/video_root_layout"
+    android:orientation="vertical">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/videoview_video"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <include layout="@layout/layout_video_layer" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="300dp"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/video_commite_layout"
+        android:padding="5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp">
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:hint="输入聊天内容"
+            android:paddingLeft="5dp"
+            android:background="@drawable/drawable_commit"
+            android:layout_toLeftOf="@+id/video_commit_send"
+            android:id="@+id/video_commite_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:id="@+id/video_commit_send"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </RelativeLayout>
+
+</FrameLayout>
